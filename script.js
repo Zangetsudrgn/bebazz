@@ -34,7 +34,7 @@ if(slider){
 // ====== GALLERY ======
 const gallery = document.getElementById("gallery");
 if(gallery){
-  const totalPhotos = 50;
+  const totalPhotos = 51;
   const galleryPhotos = Array.from({length:totalPhotos},(_,i)=>`photo${i+1}.jpg`);
   galleryPhotos.forEach(img=>{
     const el = document.createElement("img");
@@ -74,4 +74,5 @@ if(gallery){
     if(e.key==="ArrowRight") showImage(current+1);
   });
 }
+
 
